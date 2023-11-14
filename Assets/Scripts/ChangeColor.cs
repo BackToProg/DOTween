@@ -9,6 +9,7 @@ public class ChangeColor : MonoBehaviour
     {
         MeshRenderer renderer = GetComponent<MeshRenderer>();
         int duration = 10;
+        
         renderer.material.DOColor(Color.yellow, duration).SetLoops(-1, LoopType.Yoyo);
     }
 
